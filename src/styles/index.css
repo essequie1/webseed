@@ -1,0 +1,73 @@
+@import url(vars.css);
+@import url(Nav.css);
+@import url(Hero.css);
+@import url(CallToAction.css);
+@import url(ChooseUs.css);
+@import url(WhatWeDo.css);
+@import url(Card.css);
+@import url(Technologies.css);
+@import url(Stages.css);
+@import url(Contact.css);
+@import url(Footer.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: Metropolis;
+  src: url(../assets/fonts/Metropolis-Regular.otf);
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Metropolis;
+  src: url(../assets/fonts/Metropolis-Black.otf);
+  font-style: bold;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Metropolis;
+  src: url(../assets/fonts/Metropolis-Thin.otf);
+  font-style: thin;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Metropolis;
+  src: url(../assets/fonts/Metropolis-Medium.otf);
+  font-style: medium;
+  font-weight: 700;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+}
+
+.green-word {
+  color: var(--main-clr);
+}
+
+.app {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow: auto;
+}
+
+#group-letters,
+#s {
+  transition: transform 200ms, opacity 100ms;
+}
+
+.translateLetters {
+  transform: translateX(-5vw);
+  opacity: 0;
+}
+
+.translateS {
+  transform: translateX(-80px);
+}

@@ -1,0 +1,46 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__container {
+  display: flex;
+}
+
+.title {
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 600;
+  height: 100px;
+}
+
+.p__container {
+  display: inline-block;
+  width: auto;
+}
+
+.p {
+  position: relative;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear forwards;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 0;
+  }
+}

@@ -1,0 +1,16 @@
+.nav {
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 100ms;
+}
+
+.nav__logo {
+  width: 250px;
+  margin: 75px;
+}
