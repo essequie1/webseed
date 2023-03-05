@@ -1,0 +1,9 @@
+export { default as React } from "./React_Logo.svg";
+export { default as Node } from "./Node_Logo.svg";
+export { default as HTML } from "./HTML_Logo.svg";
+export { default as CSS } from "./CSS_Logo.svg";
+export { default as JS } from "./JavaScript_Logo.svg";
+export { default as Sass } from "./Sass_Logo.svg";
+export { default as Tailwind } from "./Tailwind_Logo.svg";
+export { default as MySQL } from "./MySql_Logo.svg";
+export { default as Mongo } from "./MongoDB_Logo.svg";
