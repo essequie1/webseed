@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/svg/...webseed.svg";
 
 const Nav = () => {
   return (

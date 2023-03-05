@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import React from "react";
 import Stage1 from "../assets/svg/Stage1.svg";
 import flap from "../assets/svg/flap.svg";

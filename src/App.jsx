@@ -18,7 +18,6 @@ function App() {
         s.classList.remove("translateS");
       }
       if (window.scrollTop == stages.offsetTop) {
-        console.log(nav);
         stages.style.backgroundColor = "#EFF5E9";
         nav.style.boxShadow = "inset 0 -4px 4px #00000025";
       } else {
