@@ -1,0 +1,32 @@
+.hero {
+  width: 100svw;
+  height: 100svh;
+  scroll-snap-align: center;
+  user-select: none;
+  position: relative;
+  &__container {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    justify-content: center;
+    &__title {
+      font-size: 5rem;
+      font-weight: 600;
+      overflow: hidden;
+      width: 100%;
+      text-align: right;
+    }
+    &__word {
+      text-align: left;
+      font-size: 5rem;
+      font-weight: 600;
+      margin-left: 1.5rem;
+      overflow: hidden;
+      transition: all 200ms;
+      color: var(--main-clr);
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
+import "./Hero.scss";
 
 const Hero = () => {
   const animation = count => {
@@ -27,12 +28,10 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="hero__container">
-        <h2 className="title">grow your</h2>
-        <div className="p__container">
-          <p id="wordContainer" className="p">
-            sales
-          </p>
-        </div>
+        <h2 className="hero__container__title">grow your</h2>
+        <p className="hero__container__word" id="wordContainer">
+          sales
+        </p>
       </div>
     </div>
   );
