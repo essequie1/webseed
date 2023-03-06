@@ -16,7 +16,7 @@
       font-size: 5rem;
       font-weight: 600;
       overflow: hidden;
-      width: 100%;
+      width: 1fr;
       text-align: right;
     }
     &__word {
@@ -24,6 +24,7 @@
       font-size: 5rem;
       font-weight: 600;
       margin-left: 1.5rem;
+      width: 192px;
       overflow: hidden;
       transition: all 200ms;
       color: var(--main-clr);

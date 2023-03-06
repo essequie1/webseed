@@ -1,27 +1,33 @@
-import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./Hero.scss";
 
-const Hero = () => {
-  const animation = count => {
-    let container = document.getElementById("wordContainer");
+function Hero() {
+  const animation = idx => {
     const words = ["business", "community", "sales"];
-    container.animate([{ width: "100%" }, { width: 0 }], { duration: 200, fill: "forwards", delay: 4000 });
-    container.animate([{ width: 0 }, { width: "100%" }], { duration: 200, fill: "forwards", delay: 5000 });
+    let container = document.getElementById("wordContainer");
+
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+    ctx.font = "bold 6rem serif";
+    let text = ctx.measureText(words[idx]);
+
+    container.animate([{ width: 0 }], { duration: 200, fill: "forwards", delay: 4000 });
+    container.animate([{ width: 0 }, { width: text.width + "px" }], { duration: 200, fill: "forwards", delay: 5000 });
+
     setTimeout(() => {
-      container.innerHTML = words[count - 1];
+      container.innerHTML = words[idx];
     }, 4500);
   };
 
   useEffect(() => {
-    let count = 0;
+    let idx = 0;
     setInterval(() => {
-      if (count > 2) {
-        count = 1;
+      animation(idx);
+      if (idx < 2) {
+        idx++;
       } else {
-        count = count + 1;
+        idx = 0;
       }
-      animation(count);
     }, 5000);
   }, []);
 
@@ -35,6 +41,6 @@ const Hero = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Hero;

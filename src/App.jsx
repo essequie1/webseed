@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Nav, Hero, CallToAction, ChooseUs, WhatWeDo, Technologies, Stages, Contact, Footer } from "./components/index";
 
 function App() {
