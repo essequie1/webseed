@@ -8,7 +8,7 @@
 @import url(Stages.css);
 @import url(Contact.css);
 
-@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 
 @font-face {
   font-family: Metropolis;
@@ -43,7 +43,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Readex Pro", sans-serif;
+  font-family: 'Readex Pro', sans-serif;
+}
+
+html {
+  user-select: none;
 }
 
 .green-word {
@@ -53,7 +57,9 @@
 .app {
   scroll-snap-type: y mandatory;
   height: 100vh;
-  overflow: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 #group-letters,

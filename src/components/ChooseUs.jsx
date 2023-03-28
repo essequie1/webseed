@@ -1,9 +1,9 @@
-import React from "react";
-import img from "../assets/svg/ChooseUs.svg";
+import React from 'react';
+import img from '../assets/svg/ChooseUs.svg';
 
 const ChooseUs = () => {
   return (
-    <div className="chooseUs">
+    <div id="chooseUs" className="chooseUs">
       <div className="chooseUs__content">
         <h2 className="chooseUs__title">Why Choose us?</h2>
         <p className="chooseUs__p">

@@ -1,5 +1,5 @@
-import React from "react";
-import Card from "./Card";
+import React from 'react';
+import Card from './Card';
 
 const WebDevSVG = () => {
   return (
@@ -1637,7 +1637,7 @@ const EcomSVG = () => {
 
 const WhatWeDo = () => {
   return (
-    <div className="whatWeDo">
+    <div id="whatWeDo" className="whatWeDo">
       <h2 className="whatWeDo__title">What we do</h2>
       <div className="whatWeDo__card-container">
         <Card

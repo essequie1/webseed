@@ -1,6 +1,6 @@
 .stages {
-  height: 100vh;
-  width: 100vw;
+  height: 100svh;
+  width: 100svw;
   display: flex;
   scroll-snap-align: center;
   position: relative;
@@ -31,7 +31,7 @@
   position: absolute;
   background-color: #eff5e9;
   height: calc(100vh - 150px);
-  width: 100vw;
+  width: 100svw;
   bottom: 0;
   box-shadow: 4px 1px 4px 0 #00000025;
   display: grid;
@@ -76,8 +76,8 @@
 }
 
 .stage__img {
-  width: 50vw;
-  height: 50vh;
+  width: 50svw;
+  height: 50svh;
   grid-area: 1 / 2 / 3 / 3;
   place-self: center;
 }

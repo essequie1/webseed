@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 const CallToAction = () => {
   return (
-    <div className="callToAction">
+    <div id="whyWeb" className="callToAction">
       <h2 className="callToAction__title">Why should my business have a Web Page?</h2>
       <p className="callToAction__p">
         Around 5.2 Billion people navigates the internet every single day. <br />

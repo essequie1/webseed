@@ -1,16 +1,33 @@
 .nav {
-  width: 100vw;
+  width: 100svw;
   height: 150px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   transition: all 100ms;
+  padding: 75px;
 }
 
 .nav__logo {
   width: 250px;
-  margin: 75px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  transition: all 100ms;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--main-clr);
 }

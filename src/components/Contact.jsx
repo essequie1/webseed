@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import webseed from "../assets/svg/.webseed.svg";
+import React, { useEffect } from 'react';
+import webseed from '../assets/svg/.webseed.svg';
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
       <div className="call">
         <p className="call__p">
           Lets grow your <span className="green-word">brand</span>
@@ -43,6 +43,8 @@ const Contact = () => {
         </form>
         <p></p>
       </div>
+
+      <footer className="contact__footer">All Rights Reserved - © .webseed / 2022</footer>
     </div>
   );
 };
